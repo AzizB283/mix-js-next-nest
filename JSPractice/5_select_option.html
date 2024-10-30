@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Option</title>
+</head>
+<body>
+    <h2>Select any one season from below</h2>
+
+    <label for="">Choose any one :</label>
+    <select name="seasons" id="seasons">
+        <option value="" selected disabled>Select One</option>
+        <option value="winter">Winter</option>
+        <option value="summer">Summer</option>
+        <option value="rain">Rain</option>
+        <option value="snow">Snowy</option>
+    </select>
+
+    <p id="text"></p>
+
+
+    <script>
+
+        const seasons = document.getElementById("seasons");
+
+        const text = document.getElementById("text");
+
+        seasons.addEventListener("click", result);
+
+        function result(){
+            const choice = seasons.value;
+
+            if(choice == "winter"){
+                text.innerText = "It is windy weather. Please go outside wearing warm jacket."
+            }
+            else if(choice == "summer"){
+                text.innerText = "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream."
+            }
+            else if(choice == "rain"){
+                text.innerText = "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long."
+            }
+            else if(choice == "snow"){
+                text.innerText = "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman."
+            }
+            else[
+                text.innerText = ""
+            ]
+        }
+    </script>
+    
+</body>
+</html>

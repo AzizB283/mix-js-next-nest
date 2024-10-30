@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+    margin: 30px;
+    padding: 0 10px;
+}
+
+.btn{
+    margin: 0 10px
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+h4{
+    margin: 20px;
+    font-size: 20px;
+}
+
+#submit{
+    padding: 02px 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
